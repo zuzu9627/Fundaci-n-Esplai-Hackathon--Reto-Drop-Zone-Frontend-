@@ -1,0 +1,218 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+/* VARIABLES */
+:root {
+  /* =========================================================== COLORS================================================== */
+
+  --hue-color: 231;
+  /* DOMINANT COLOR : DEPENDING THE NUMBER IT'LL CHANGE TO ANOTHER COLOR:  250 BLUE */
+  /* HSL COLOR MODE */
+  --first-color: hsl(var(--hue-color), 86%, 57%);
+  --first-color-second: hsl(var(--hue-color), 59%, 16%);
+  --text-color: hsl(var(--hue-color), 20%, 5%);
+  --white-smoke: hsl(15, 29%, 95%);
+
+  /* =========================================================== FONT & TYPOGRAPHY================================================== */
+  --body-font: 'Caveat', cursive;
+  /* .5 rem=8px, 1rem=16px, 1.5rem=24px.... */
+  --big-font-size: 4.75rem;
+  --h1-font-size: 3rem;
+  --h2-font-size: 2.5rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.75rem;
+  --smaller-font-size: 0.5rem;
+
+  /* ===================== FONT WEIGHT====================== */
+  --font-medium: 500;
+  /* =========================== MARGIN BOTTOM===================================== */
+  /* 0.25rem=4x , 0.5 rem=8px, 0.75rem=12px, 1rem=16px, 1.5rem=24px.... */
+  --mb-1: 1rem;
+  --mb-3: 3rem;
+}
+
+/* BODY PARAMETERS */
+body {
+  background-color: var(--first-color);
+  font-family: var(--body-font);
+  color: var(--white-smoke);
+  font-size: var(--normal-font-size);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+a:active {
+  color: var(--white-smoke) !important;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--white-smoke);
+  font-weight: var(--font-medium);
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+/* WRAPPER */
+.wrapper .row #Hackathon {
+  color: var(--first-color-second);
+  font-weight: 500;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .first-text {
+  font-size: 60px;
+}
+
+.wrapper .sec-text {
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+.sec-text li {
+  position: relative;
+  top: 0;
+  font-size: 60px;
+  color: whitesmoke;
+  list-style: none;
+  text-shadow: 0 0 10px whitesmoke;
+  animation: slide 9s steps(3) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -270px;
+  }
+}
+
+.sec-text li span {
+  position: relative;
+}
+
+.sec-text li span::before {
+  content: '';
+  position: absolute;
+  left: 0%;
+  width: 400px;
+  height: 90px;
+  background-color: var(--first-color);
+  border-left: 2px solid var(--first-color-second);
+  animation: typing 1.5s steps(8) infinite alternate;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+
+/* BUTTONS LOGIN */
+.btn {
+  background-color: transparent;
+  border: .05rem solid var(--white-smoke) !important;
+  display: flex;
+  justify-content: space-evenly;
+  transition: .3s;
+}
+
+.btn:hover {
+  background-color: var(--first-color-second);
+  transform: translateY(0.25rem);
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* BUTTON DARKMODE/LIGHTMODE */
+.nav_btns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.change-theme {
+  font-size: 1.25rem;
+  margin-right: var(--mb-1);
+  margin-bottom: var(--mb-3);
+  cursor: pointer;
+}
+
+.change-theme:hover {
+  color: var(--first-color-second);
+}
+
+.container_drop-zone {
+  background-color: var(--first-color);
+  height: 100vh;
+  margin: 0 auto;
+}
+
+
+.textRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.arrastra1 {
+  background-color: transparent;
+  height: 70%;
+  width: 100%;
+  box-shadow: -1px -1px 13px .5px var(--first-color-second);
+  border-radius: 1rem;
+}
+
+.arrastra2 {
+  margin-top: 10%;
+  background-color: var(--first-color-second);
+  height: 7%;
+  width: 100%;
+  border-radius: 0.375rem;
+
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#output_uploads {
+  margin-top: 20px;
+  list-style: none;
+}
+
+#file_input {
+  display: none;
+}
+
+#copyright {
+  color: var(--first-color-second);
+  font-size: 1rem;
+}
+
+/* ===========================================================VARIABLES DARK THEME================================================== */
+body.dark-theme {
+  /* HSL COLOR MODE */
+  --first-color-second: hsl(var(--hue-color), 59%, 76%);
+  --first-color: hsl(var(--hue-color), 59%, 17%);
+  --text-color: hsl(var(--hue-color), 20%, 5%);
+  --white-smoke: hsl(15, 29%, 95%);
+
+}
