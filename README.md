@@ -1,4 +1,4 @@
-🚀# Fundación Esplai Hackathon-
+#  🚀 Fundación Esplai Hackathon-
  Reto Drop Zone (Frontend)⭐
 ## Responsive Drop-Zone
 In this challenge we seek to create a drop zone, generating a comfortable visual environment for the user, improving the experience when uploading files to a web site, as a result we obtain a responsive environment, with functions to change the theme according to the schedule that facilitates reading depending on the user's taste and / or time.
