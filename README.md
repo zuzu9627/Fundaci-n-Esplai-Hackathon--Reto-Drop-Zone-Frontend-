@@ -17,7 +17,7 @@ Firts parameter rest always the same,the other change.
   --white-smoke: hsl(15, 29%, 95%);
 
 ### TYPOGRAPHY✒️
-### HEADINGS,HEADER NAVIGATION,BODY
+#### HEADINGS,HEADER NAVIGATION,BODY
 -Family [Caveat] https://fonts.google.com/specimen/Montserrat
 -Weigths medium 500
 
@@ -25,12 +25,12 @@ Firts parameter rest always the same,the other change.
 Used:    
 [FontAwesome] https://fontawesome.com/icons
 
-## BLACK MODE⬛
+## BLACK MODE⬛🌙
   --first-color-second: hsl(var(--hue-color), 59%, 76%);
   --first-color: hsl(var(--hue-color), 59%, 17%);
   --text-color: hsl(var(--hue-color), 20%, 5%);
   --white-smoke: hsl(15, 29%, 95%);
-## LIGHT MODE
+## LIGHT MODE ⬜☀️
   --first-color: hsl(var(--hue-color), 86%, 57%);
   --first-color-second: hsl(var(--hue-color), 59%, 16%);
   --text-color: hsl(var(--hue-color), 20%, 5%);
