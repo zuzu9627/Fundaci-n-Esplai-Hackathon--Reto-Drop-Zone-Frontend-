@@ -2,7 +2,7 @@
 ## Responsive Drop-Zone
 In this challenge we seek to create a drop zone, generating a comfortable visual environment for the user, improving the experience when uploading files to a web site, as a result we obtain a responsive environment, with functions to change the theme according to the schedule that facilitates reading depending on the user's taste and / or time.
 ## FRAMEWORKS & LIBRARYS 
-The project uses Bootstrap for a improvement of responsive. 
+The project uses Bootstrap for a improvement of responsive. It's necesary to configure the environment of Node JS in the console 1.npm init -y 2.npm install express multer 3. node .
 ### COLORS
 Colors were selected by HSL Color  creating a new variable that allows with only modifying a parameter it'll create complementary colors.
 hsl(231, 0%, 0%)
